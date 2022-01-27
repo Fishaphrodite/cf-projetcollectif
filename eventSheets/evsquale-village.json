@@ -1,0 +1,86 @@
+{
+	"name": "evSquale-Village",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 322642753216810
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "zorder",
+					"sid": 922525421930098,
+					"parameters": {
+						"instance-variable": "Ypos",
+						"value": "Self.Y"
+					}
+				},
+				{
+					"id": "sort-z-order",
+					"objectClass": "System",
+					"sid": 167370644981535,
+					"parameters": {
+						"object": "zorder",
+						"instance-variable": {
+							"name": "Ypos",
+							"objectClass": "zorder"
+						}
+					}
+				},
+				{
+					"id": "move-to-object",
+					"objectClass": "perso",
+					"sid": 478150330986207,
+					"parameters": {
+						"where": "in-front",
+						"object": "player"
+					}
+				}
+			],
+			"sid": 303169515323125
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 556354225861034
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "perso",
+					"sid": 603360443765541,
+					"parameters": {
+						"x": "player.X",
+						"y": "player.Y-40"
+					}
+				},
+				{
+					"id": "add-child",
+					"objectClass": "player",
+					"sid": 633239037339557,
+					"parameters": {
+						"child": "perso",
+						"transform-x": true,
+						"transform-y": true,
+						"transform-w": true,
+						"transform-h": true,
+						"transform-a": true,
+						"transform-z-elevation": true,
+						"destroy-with-parent": true
+					}
+				}
+			],
+			"sid": 828776301246587
+		}
+	],
+	"sid": 508734343041687
+}

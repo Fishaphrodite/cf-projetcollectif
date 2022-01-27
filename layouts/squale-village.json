@@ -1,11 +1,54 @@
 {
-	"name": "Layout 1",
+	"name": "Squale-Village",
 	"layers": [
 		{
 			"name": "Layer 0",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
+				{
+					"type": "player",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 10,
+					"instanceVariables": {
+						"Ypos": 0
+					},
+					"behaviors": {
+						"8Direction": {
+							"properties": {
+								"max-speed": 300,
+								"acceleration": 6000,
+								"deceleration": 5000,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 271.44421675995216,
+						"y": 469.41189933407344,
+						"width": 64,
+						"height": 80,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
 				{
 					"type": "9patch",
 					"properties": {
@@ -40,7 +83,7 @@
 					}
 				},
 				{
-					"type": "Sprite",
+					"type": "maison",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -49,8 +92,17 @@
 						"live-preview": false
 					},
 					"uid": 3,
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"Ypos": 0
+					},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 637,
 						"y": 418,
@@ -177,5 +229,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Event sheet 1"
+	"eventSheet": "evSquale-Village"
 }

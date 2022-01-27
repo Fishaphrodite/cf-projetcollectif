@@ -24,6 +24,22 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "sliderbar",
+			"name": "Slider bar",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "NinePatch",
 			"name": "9-patch",
 			"author": "Scirra",
@@ -39,17 +55,17 @@
 			"bundled": false
 		},
 		{
-			"type": "plugin",
-			"id": "Spritefont2",
-			"name": "Sprite font",
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
 		},
 		{
-			"type": "plugin",
-			"id": "sliderbar",
-			"name": "Slider bar",
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -58,32 +74,48 @@
 	"uniqueId": "l5tat88vycp",
 	"objectTypes": {
 		"items": [
-			"perso",
-			"Sprite",
-			"Text",
 			"9patch",
-			"Mouse",
-			"Fish_Heart",
-			"Fish_Slider"
+			"Mouse"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"perso",
+					"player",
+					"maison",
+					"Text"
+				],
+				"subfolders": [],
+				"name": "squale"
+			},
+			{
+				"items": [
+					"Fish_Heart",
+					"Fish_Slider"
+				],
+				"subfolders": [],
+				"name": "fish"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"zorder"
+		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
-			"Layout 1",
+			"Squale-Village",
 			"Fish-HealthBar"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1",
+			"evSquale-Village",
 			"evFish-HealthBar"
 		],
 		"subfolders": []

@@ -1,0 +1,19 @@
+{
+	"name": "zorder",
+	"plugin-id": "Sprite",
+	"sid": 255813813239661,
+	"instanceVariables": [
+		{
+			"name": "Ypos",
+			"type": "number",
+			"desc": "",
+			"sid": 912988791325796
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"maison",
+		"player"
+	]
+}
