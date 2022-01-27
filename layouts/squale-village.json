@@ -33,8 +33,8 @@
 						}
 					},
 					"world": {
-						"x": 271.44421675995216,
-						"y": 469.41189933407344,
+						"x": 349,
+						"y": 460,
 						"width": 64,
 						"height": 80,
 						"originX": 0.5,
@@ -124,7 +124,7 @@
 					"type": "perso",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -133,8 +133,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 635,
-						"y": 431,
+						"x": 278,
+						"y": -96,
 						"width": 96,
 						"height": 96,
 						"originX": 0.5,

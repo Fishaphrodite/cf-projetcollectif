@@ -80,6 +80,61 @@
 				}
 			],
 			"sid": 828776301246587
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "player",
+					"sid": 789710568399161,
+					"behaviorType": "8Direction"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "perso",
+					"sid": 386777167532442,
+					"parameters": {
+						"animation": "\"walk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "9patch",
+					"sid": 888803439729971
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Text",
+					"sid": 985437013933239
+				}
+			],
+			"sid": 307832370724870
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 492811137677130
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "perso",
+					"sid": 768203059624811,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 722102626124437
 		}
 	],
 	"sid": 508734343041687
