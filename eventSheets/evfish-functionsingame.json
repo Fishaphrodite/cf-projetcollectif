@@ -1,0 +1,211 @@
+{
+	"name": "evFish-FunctionsInGame",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "MaxHealth",
+			"type": "number",
+			"initialValue": "32",
+			"comment": "Maximum Health in quarter of hearts",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 766710311909467
+		},
+		{
+			"eventType": "variable",
+			"name": "CurrentHealth",
+			"type": "number",
+			"initialValue": "32",
+			"comment": "Current Health in quarter of hearts",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 570198962942348
+		},
+		{
+			"functionName": "RefreshHealthBar",
+			"functionDescription": "Will take two numbers (CurrentQuarter and MaxQuarter) and generate a string composed of the numbers 0 1 2 3 4 to represent a health bar in a spritefont",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "MaxQuarter",
+					"type": "number",
+					"initialValue": "32",
+					"comment": "the max amount of quarter of hearts in the healthbar",
+					"sid": 122904001418248
+				},
+				{
+					"name": "CurrentQuarter",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "The current amount of health",
+					"sid": 760415205424982
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 867646781861314,
+					"parameters": {
+						"variable": "CurrentQuarter",
+						"value": "clamp(CurrentQuarter, 0, MaxQuarter)"
+					}
+				}
+			],
+			"sid": 908911503616488,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "endstring",
+					"type": "string",
+					"initialValue": "",
+					"comment": "The number of quarter of hearts, encoded to use in a spritefont",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 749844649423797
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "repeat",
+							"objectClass": "System",
+							"sid": 874474574448103,
+							"parameters": {
+								"count": "floor(MaxQuarter/4)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 922273717279060,
+							"parameters": {
+								"variable": "endstring",
+								"value": "endstring&clamp((CurrentQuarter-loopindex*4),0,4)"
+							}
+						}
+					],
+					"sid": 590038426886898
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Fish_Heart",
+							"sid": 945124321170567,
+							"parameters": {
+								"text": "endstring"
+							}
+						}
+					],
+					"sid": 942079430653902
+				}
+			]
+		},
+		{
+			"functionName": "GetHurt",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "DamageTaken",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "The current amount of health",
+					"sid": 796553298686735
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 490088376307709,
+					"parameters": {
+						"variable": "CurrentHealth",
+						"value": "max(CurrentHealth-DamageTaken,0)"
+					}
+				},
+				{
+					"callFunction": "RefreshHealthBar",
+					"sid": 667448177524991,
+					"parameters": [
+						"MaxHealth",
+						"CurrentHealth"
+					]
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "Fish_Heart",
+					"sid": 829227384941407,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "0.5",
+						"type": "once",
+						"tag": "\"Hurting\""
+					}
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "player",
+					"sid": 626829197504485,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "1.0",
+						"type": "once",
+						"tag": "\"Hurting\""
+					}
+				}
+			],
+			"sid": 693261988377900,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 618113457359523,
+							"parameters": {
+								"variable": "CurrentHealth",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "PlayerNoHP",
+							"sid": 218402941507595
+						}
+					],
+					"sid": 451224194818662
+				}
+			]
+		},
+		{
+			"functionName": "PlayerNoHP",
+			"functionDescription": "Function to call when the player has no HP left",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 758505352852761
+		}
+	],
+	"sid": 375078433311782
+}
