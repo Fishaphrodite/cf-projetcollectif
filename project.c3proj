@@ -83,7 +83,9 @@
 	"objectTypes": {
 		"items": [
 			"9patch",
-			"Mouse"
+			"Mouse",
+			"Sprite",
+			"Sprite2"
 		],
 		"subfolders": [
 			{
