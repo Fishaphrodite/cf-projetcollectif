@@ -29,6 +29,30 @@
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "sliderbar",
+			"name": "Slider bar",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "l5tat88vycp",
@@ -37,7 +61,10 @@
 			"perso",
 			"Sprite",
 			"Text",
-			"9patch"
+			"9patch",
+			"Mouse",
+			"Fish_Heart",
+			"Fish_Slider"
 		],
 		"subfolders": []
 	},
@@ -49,13 +76,15 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Layout 1",
+			"Fish-HealthBar"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"evFish-HealthBar"
 		],
 		"subfolders": []
 	},
