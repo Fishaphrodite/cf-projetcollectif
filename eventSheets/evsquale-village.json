@@ -143,6 +143,166 @@
 				}
 			],
 			"sid": 722102626124437
+
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "HUD specific",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "ProgressionAnimHUD",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "Goes from 0 (start) to 1 (end)",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 268569485774254
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-timer-running",
+							"objectClass": "Fish_Heart",
+							"sid": 102530941762427,
+							"behaviorType": "Timer",
+							"parameters": {
+								"tag": "\"Hurting\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 917917603910702,
+							"parameters": {
+								"variable": "ProgressionAnimHUD",
+								"value": "Fish_Heart.Timer.CurrentTime(\"Hurting\")/Fish_Heart.Timer.Duration(\"Hurting\")"
+							}
+						}
+					],
+					"sid": 825038670919938,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-default-color",
+									"objectClass": "Fish_Heart",
+									"sid": 898758669091848,
+									"parameters": {
+										"color": "rgbEx(lerp(116, 255, ProgressionAnimHUD), lerp(0, 255, ProgressionAnimHUD), lerp(0, 255, ProgressionAnimHUD))"
+									}
+								}
+							],
+							"sid": 472156371813698
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-timer",
+							"objectClass": "Fish_Heart",
+							"sid": 629277895702696,
+							"behaviorType": "Timer",
+							"parameters": {
+								"tag": "\"Hurting\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-default-color",
+							"objectClass": "Fish_Heart",
+							"sid": 131363072659370,
+							"parameters": {
+								"color": "rgbEx(255,255,255)"
+							}
+						}
+					],
+					"sid": 226037929078292
+				}
+			],
+			"sid": 252465568300932
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Debug",
+			"description": "Put whatever you need to debug things here, should be disabled when publishing the game",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "A function meant to lower health when a click is made, for debug purposes"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-click",
+							"objectClass": "Mouse",
+							"sid": 509362736242423,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "GetHurt",
+							"sid": 679767541329497,
+							"parameters": [
+								"3"
+							]
+						}
+					],
+					"sid": 641242460131283
+				}
+			],
+			"sid": 572842911749898
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "player",
+					"sid": 955494928737903,
+					"parameters": {
+						"object": "En_RollingBlade"
+					}
+				},
+				{
+					"id": "is-timer-running",
+					"objectClass": "player",
+					"sid": 380095841885320,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"Hurting\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "GetHurt",
+					"sid": 895623135527748,
+					"parameters": [
+						"1"
+					]
+				}
+			],
+			"sid": 344876915886269
 		}
 	],
 	"sid": 508734343041687
