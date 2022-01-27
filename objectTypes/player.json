@@ -9,6 +9,11 @@
 			"behaviorId": "EightDir",
 			"name": "8Direction",
 			"sid": 268418143951271
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 569413541844896
 		}
 	],
 	"effectTypes": [],

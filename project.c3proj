@@ -32,14 +32,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "sliderbar",
-			"name": "Slider bar",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "NinePatch",
 			"name": "9-patch",
 			"author": "Scirra",
@@ -64,8 +56,24 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -91,7 +99,7 @@
 			{
 				"items": [
 					"Fish_Heart",
-					"Fish_Slider"
+					"En_RollingBlade"
 				],
 				"subfolders": [],
 				"name": "fish"
@@ -108,15 +116,14 @@
 	},
 	"layouts": {
 		"items": [
-			"Squale-Village",
-			"Fish-HealthBar"
+			"Squale-Village"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"evSquale-Village",
-			"evFish-HealthBar"
+			"evFish-FunctionsInGame"
 		],
 		"subfolders": []
 	},
