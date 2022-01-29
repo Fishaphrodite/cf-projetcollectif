@@ -1,0 +1,94 @@
+{
+	"name": "DialogueSpawner",
+	"plugin-id": "Sprite",
+	"sid": 155491780733168,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "TextToPrint",
+			"type": "string",
+			"desc": "; separated list of dialogue to show when the player is close",
+			"sid": 388808572283804
+		},
+		{
+			"name": "SpeechBubbleAtLeft",
+			"type": "boolean",
+			"desc": "True if the speech bubble needs to be on the left-side, false if it needs to be on the right",
+			"sid": 355700075991367
+		},
+		{
+			"name": "currentDialogueIndex",
+			"type": "number",
+			"desc": "0 : is showing the first sentence, 1 : is showing the second, etc.",
+			"sid": 519647133659870
+		},
+		{
+			"name": "IsDisplaying",
+			"type": "boolean",
+			"desc": "True when it tries to display the text, false otherwise",
+			"sid": 795834783835865
+		},
+		{
+			"name": "Etape",
+			"type": "number",
+			"desc": "0: ne fait rien, 1ou 2 ou 4 ou 5 : transitions, 3 : texte affiché statiquement",
+			"sid": 939603807184475
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 915971619058695
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 8,
+						"height": 8,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7728547,
+						"collisionPoly": {
+							"points": [
+								0.175,
+								0.175,
+								0.5,
+								0,
+								0.825,
+								0.175,
+								1,
+								0.5,
+								0.825,
+								0.825,
+								0.5,
+								1,
+								0.175,
+								0.825,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 791627939877425,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
