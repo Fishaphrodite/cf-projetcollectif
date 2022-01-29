@@ -1,0 +1,468 @@
+{
+	"name": "evFish-Dialogue",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "evSquale-Village"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 275005525090104
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "9patch",
+					"sid": 911924796214412,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Text",
+					"sid": 568175985489954,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 982563627572602
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "DialogueSpawner",
+					"sid": 967224042457084,
+					"parameters": {
+						"object": "player"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "DialogueSpawner",
+					"sid": 395670512016991,
+					"parameters": {
+						"instance-variable": "Etape",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "InitSpeechBubble",
+					"sid": 554621323072363,
+					"parameters": [
+						"DialogueSpawner.UID"
+					]
+				}
+			],
+			"sid": 455223204610684
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-timer",
+					"objectClass": "DialogueSpawner",
+					"sid": 971076001231550,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"TextTransition\""
+					}
+				},
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 560999092541944,
+					"parameters": {
+						"object": "DialogueSpawner"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 279881573189813,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DialogueSpawner",
+							"sid": 715529403233100,
+							"parameters": {
+								"instance-variable": "Etape",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "DialogueSpawner",
+							"sid": 933995421147241,
+							"parameters": {
+								"instance-variable": "currentDialogueIndex",
+								"value": "Self.currentDialogueIndex+1"
+							}
+						}
+					],
+					"sid": 385925438436454,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "evaluate-expression",
+									"objectClass": "System",
+									"sid": 479144494416368,
+									"parameters": {
+										"value": "DialogueSpawner.currentDialogueIndex<tokencount(DialogueSpawner.TextToPrint,\";\")"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "Text",
+									"sid": 593440759577149,
+									"parameters": {
+										"text": "tokenat(DialogueSpawner.TextToPrint,DialogueSpawner.currentDialogueIndex,\";\")"
+									}
+								},
+								{
+									"id": "start-timer",
+									"objectClass": "DialogueSpawner",
+									"sid": 389459549559567,
+									"behaviorType": "Timer",
+									"parameters": {
+										"duration": "0.25",
+										"type": "once",
+										"tag": "\"TextTransition\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "DialogueSpawner",
+									"sid": 554686266893095,
+									"parameters": {
+										"instance-variable": "Etape",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 743944883109154
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 684525924710340
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "DialogueSpawner",
+									"sid": 598391924028874,
+									"parameters": {
+										"instance-variable": "currentDialogueIndex",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "DialogueSpawner",
+									"sid": 864494034393699,
+									"parameters": {
+										"instance-variable": "Etape",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "9patch",
+									"sid": 762928296202426,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Text",
+									"sid": 770840755839784,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 810195847131601
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 899715181475530
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "DialogueSpawner",
+							"sid": 187224071020557,
+							"parameters": {
+								"instance-variable": "Etape",
+								"value": "Self.Etape+1"
+							}
+						}
+					],
+					"sid": 656159636620591,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "DialogueSpawner",
+									"sid": 533303032946289,
+									"parameters": {
+										"instance-variable": "Etape",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "start-timer",
+									"objectClass": "DialogueSpawner",
+									"sid": 240424914500776,
+									"behaviorType": "Timer",
+									"parameters": {
+										"duration": "2",
+										"type": "once",
+										"tag": "\"TextTransition\""
+									}
+								}
+							],
+							"sid": 916850693287525
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "DialogueSpawner",
+									"sid": 370456652380624,
+									"parameters": {
+										"instance-variable": "Etape",
+										"comparison": 0,
+										"value": "3"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "start-timer",
+									"objectClass": "DialogueSpawner",
+									"sid": 582276750358457,
+									"behaviorType": "Timer",
+									"parameters": {
+										"duration": "0.25",
+										"type": "once",
+										"tag": "\"TextTransition\""
+									}
+								}
+							],
+							"sid": 301238468941782
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-timer-running",
+					"objectClass": "DialogueSpawner",
+					"sid": 852642543467884,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"TextTransition\""
+					}
+				},
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 486127477013291,
+					"parameters": {
+						"object": "DialogueSpawner"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 888805036145946,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DialogueSpawner",
+							"sid": 880463283932686,
+							"parameters": {
+								"instance-variable": "Etape",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "9patch",
+							"sid": 851177999686512,
+							"parameters": {
+								"width": "lerp(32,220,DialogueSpawner.Timer.CurrentTime(\"TextTransition\")/DialogueSpawner.Timer.Duration(\"TextTransition\"))"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "Text",
+							"sid": 616307801789041,
+							"parameters": {
+								"width": "9patch.Width-32"
+							}
+						}
+					],
+					"sid": 933830105039356
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DialogueSpawner",
+							"sid": 248302179285027,
+							"parameters": {
+								"instance-variable": "Etape",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "9patch",
+							"sid": 965220562994980,
+							"parameters": {
+								"width": "220",
+								"height": "lerp(32,130,DialogueSpawner.Timer.CurrentTime(\"TextTransition\")/DialogueSpawner.Timer.Duration(\"TextTransition\"))"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Text",
+							"sid": 992240852481083,
+							"parameters": {
+								"width": "9patch.Width-32",
+								"height": "9patch.Height-32"
+							}
+						}
+					],
+					"sid": 298321682660433
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DialogueSpawner",
+							"sid": 923217609414344,
+							"parameters": {
+								"instance-variable": "Etape",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-height",
+							"objectClass": "9patch",
+							"sid": 977311300482791,
+							"parameters": {
+								"height": "lerp(130,32,DialogueSpawner.Timer.CurrentTime(\"TextTransition\")/DialogueSpawner.Timer.Duration(\"TextTransition\"))"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Text",
+							"sid": 943330424822859,
+							"parameters": {
+								"width": "9patch.Width-32",
+								"height": "9patch.Height-32"
+							}
+						}
+					],
+					"sid": 644886469125728
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DialogueSpawner",
+							"sid": 407227078347871,
+							"parameters": {
+								"instance-variable": "Etape",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "9patch",
+							"sid": 748873661252309,
+							"parameters": {
+								"width": "lerp(220,32,DialogueSpawner.Timer.CurrentTime(\"TextTransition\")/DialogueSpawner.Timer.Duration(\"TextTransition\"))",
+								"height": "32"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Text",
+							"sid": 277955232055125,
+							"parameters": {
+								"width": "9patch.Width-32",
+								"height": "9patch.Height-32"
+							}
+						}
+					],
+					"sid": 654944406253052
+				}
+			]
+		}
+	],
+	"sid": 448853589362883
+}
