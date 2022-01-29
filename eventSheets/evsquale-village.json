@@ -108,16 +108,6 @@
 						"animation": "\"walk\"",
 						"from": "beginning"
 					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "9patch",
-					"sid": 888803439729971
-				},
-				{
-					"id": "destroy",
-					"objectClass": "Text",
-					"sid": 985437013933239
 				}
 			],
 			"sid": 307832370724870
@@ -143,7 +133,6 @@
 				}
 			],
 			"sid": 722102626124437
-
 		},
 		{
 			"eventType": "group",

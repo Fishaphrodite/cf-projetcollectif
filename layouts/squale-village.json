@@ -62,7 +62,7 @@
 						"edges": "tile",
 						"fill": "tile",
 						"initially-visible": true,
-						"origin": "top-left",
+						"origin": "center",
 						"seams": "overlap"
 					},
 					"uid": 5,
@@ -73,8 +73,8 @@
 						"y": 478,
 						"width": 272,
 						"height": 64,
-						"originX": 0,
-						"originY": 0,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -172,18 +172,18 @@
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "top-left"
+						"origin": "center"
 					},
 					"uid": 4,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 539,
+						"x": 500,
 						"y": 485,
 						"width": 226,
 						"height": 69,
-						"originX": 0,
-						"originY": 0,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -299,7 +299,7 @@
 						"line-height": 0,
 						"horizontal-alignment": "left",
 						"vertical-alignment": "top",
-						"wrapping": "word",
+						"wrapping": "character",
 						"initially-visible": true,
 						"origin": "center"
 					},
@@ -315,44 +315,6 @@
 						"y": 35,
 						"width": 367,
 						"height": 36,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "En_RollingBlade",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 12,
-					"instanceVariables": {},
-					"behaviors": {
-						"Rotate": {
-							"properties": {
-								"speed": -480,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 373,
-						"y": 403,
-						"width": 52,
-						"height": 52,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -391,7 +353,7 @@
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
-			"global": false
+			"global": true
 		}
 	],
 	"sid": 260266457608389,

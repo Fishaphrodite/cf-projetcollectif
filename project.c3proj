@@ -101,7 +101,8 @@
 			{
 				"items": [
 					"Fish_Heart",
-					"En_RollingBlade"
+					"En_RollingBlade",
+					"DialogueSpawner"
 				],
 				"subfolders": [],
 				"name": "fish"
@@ -109,7 +110,16 @@
 		]
 	},
 	"autosaveData": null,
-	"containers": [],
+	"containers": [
+		{
+			"members": [
+				"9patch",
+				"DialogueSpawner",
+				"Text"
+			],
+			"selectMode": "normal"
+		}
+	],
 	"families": {
 		"items": [
 			"zorder"
@@ -118,14 +128,16 @@
 	},
 	"layouts": {
 		"items": [
-			"Squale-Village"
+			"Squale-Village",
+			"Fish-Village-test"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"evSquale-Village",
-			"evFish-FunctionsInGame"
+			"evFish-FunctionsInGame",
+			"evFish-Dialogue"
 		],
 		"subfolders": []
 	},

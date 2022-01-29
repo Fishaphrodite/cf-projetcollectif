@@ -205,6 +205,168 @@
 			"conditions": [],
 			"actions": [],
 			"sid": 758505352852761
+		},
+		{
+			"functionName": "InitSpeechBubble",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "UIDSpawner",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "The UID of the DialogueSpawner Used",
+					"sid": 200081350307655
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "DialogueSpawner",
+					"sid": 765422155706976,
+					"parameters": {
+						"unique-id": "UIDSpawner"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "DialogueSpawner",
+					"sid": 134901453573475,
+					"parameters": {
+						"instance-variable": "currentDialogueIndex",
+						"value": "0"
+					}
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "DialogueSpawner",
+					"sid": 207180603621825,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "0.25",
+						"type": "once",
+						"tag": "\"TextTransition\""
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "DialogueSpawner",
+					"sid": 771111961077508,
+					"parameters": {
+						"instance-variable": "Etape",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "9patch",
+					"sid": 206953389770699,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Text",
+					"sid": 681286422650474,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 925514933997438,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "9patch",
+							"sid": 341009980015836,
+							"parameters": {
+								"x": "DialogueSpawner.X-130",
+								"y": "DialogueSpawner.Y-80"
+							}
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Text",
+							"sid": 275142932357767,
+							"parameters": {
+								"object": "9patch",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "9patch",
+							"sid": 242666503341117,
+							"parameters": {
+								"width": "32",
+								"height": "32"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Text",
+							"sid": 552959500124320,
+							"parameters": {
+								"width": "0",
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text",
+							"sid": 697467006516905,
+							"parameters": {
+								"text": "tokenat(DialogueSpawner.TextToPrint,0,\";\")"
+							}
+						}
+					],
+					"sid": 750555677516004
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "DialogueSpawner",
+							"sid": 172925002924374,
+							"parameters": {
+								"instance-variable": "SpeechBubbleAtLeft"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "9patch",
+							"sid": 786037104733772,
+							"parameters": {
+								"x": "DialogueSpawner.X+130"
+							}
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Text",
+							"sid": 369254634829035,
+							"parameters": {
+								"object": "9patch",
+								"image-point-optional": "0"
+							}
+						}
+					],
+					"sid": 337035446218415
+				}
+			]
 		}
 	],
 	"sid": 375078433311782
