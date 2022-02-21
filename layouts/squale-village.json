@@ -67,7 +67,13 @@
 					},
 					"uid": 5,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 495,
 						"y": 478,

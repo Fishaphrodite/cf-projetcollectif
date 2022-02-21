@@ -243,26 +243,6 @@
 					}
 				},
 				{
-					"id": "start-timer",
-					"objectClass": "DialogueSpawner",
-					"sid": 207180603621825,
-					"behaviorType": "Timer",
-					"parameters": {
-						"duration": "0.25",
-						"type": "once",
-						"tag": "\"TextTransition\""
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "DialogueSpawner",
-					"sid": 771111961077508,
-					"parameters": {
-						"instance-variable": "Etape",
-						"value": "1"
-					}
-				},
-				{
 					"id": "set-visible",
 					"objectClass": "9patch",
 					"sid": 206953389770699,
@@ -327,6 +307,22 @@
 							"sid": 697467006516905,
 							"parameters": {
 								"text": "tokenat(DialogueSpawner.TextToPrint,0,\";\")"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "9patch",
+							"sid": 819546860348659,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"Width+\"",
+								"property": "offsetWidth",
+								"end-value": "220",
+								"time": "0.25",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
 							}
 						}
 					],
