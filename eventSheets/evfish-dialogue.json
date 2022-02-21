@@ -46,14 +46,21 @@
 					}
 				},
 				{
-					"id": "compare-instance-variable",
+					"id": "is-any-playing",
+					"objectClass": "9patch",
+					"sid": 651359229680891,
+					"behaviorType": "Tween",
+					"isInverted": true
+				},
+				{
+					"id": "is-timer-running",
 					"objectClass": "DialogueSpawner",
-					"sid": 395670512016991,
+					"sid": 307898346768788,
+					"behaviorType": "Timer",
 					"parameters": {
-						"instance-variable": "Etape",
-						"comparison": 0,
-						"value": "0"
-					}
+						"tag": "\"TextShown\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
