@@ -111,6 +111,11 @@
 						},
 						"Timer": {
 							"properties": {}
+						},
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"world": {

@@ -47,6 +47,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
@@ -58,6 +66,14 @@
 			"type": "behavior",
 			"id": "Timer",
 			"name": "Timer",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -93,7 +109,9 @@
 			"9patch",
 			"Mouse",
 			"Sprite",
-			"Sprite2"
+			"Sprite2",
+			"Tilemap",
+			"tileAnimMer"
 		],
 		"subfolders": [
 			{

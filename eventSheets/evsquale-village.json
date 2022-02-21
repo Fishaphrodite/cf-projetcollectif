@@ -85,6 +85,13 @@
 						"MaxHealth",
 						"CurrentHealth"
 					]
+				},
+				{
+					"callFunction": "replaceTile",
+					"sid": 639961628559907,
+					"parameters": [
+						"1"
+					]
 				}
 			],
 			"sid": 828776301246587
@@ -292,6 +299,131 @@
 				}
 			],
 			"sid": 344876915886269
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "functions",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "replaceTile",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "nbTile",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 492149919999047
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "tileAnimMer",
+							"sid": 612394223750451
+						}
+					],
+					"sid": 598192554459261,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 831920484840992,
+									"parameters": {
+										"name": "\"y\"",
+										"start-index": "0",
+										"end-index": "Tilemap.Height/Tilemap.TileHeight-1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 241476937062862,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for",
+											"objectClass": "System",
+											"sid": 964068158260206,
+											"parameters": {
+												"name": "\"x\"",
+												"start-index": "0",
+												"end-index": "Tilemap.Width/Tilemap.TileWidth-1"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 566956179165818,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 694525555412219,
+													"parameters": {
+														"first-value": "Tilemap.TileAt(loopindex(\"x\"),loopindex(\"y\"))",
+														"comparison": 0,
+														"second-value": "nbTile"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 647542242015916,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 587509673847908,
+															"parameters": {
+																"first-value": "nbTile",
+																"comparison": 0,
+																"second-value": "1"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "create-object",
+															"objectClass": "System",
+															"sid": 286431031066128,
+															"parameters": {
+																"object-to-create": "tileAnimMer",
+																"layer": "0",
+																"x": "Tilemap.TileToPositionX(loopindex(\"x\"))",
+																"y": "Tilemap.TileToPositionY(loopindex(\"y\"))",
+																"create-hierarchy": false
+															}
+														}
+													],
+													"sid": 459555803146282
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"sid": 535618984646683
 		}
 	],
 	"sid": 508734343041687
