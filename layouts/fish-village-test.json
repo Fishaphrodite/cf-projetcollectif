@@ -7,6 +7,61 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "Tilemap",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 96,
+						"tile-height": 96,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 20,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 78,
+							"height": 52,
+							"max-width": 78,
+							"max-height": 53,
+							"data": "26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,7x3,15,10x25,2,7x3,27x3h,7x3,18h,10x1,2,7x3,27x3h,7x3,18h,10x1,2,7x3,27x3h,7x3,18h,10x1,2,7x3,27x3h,7x3,18h,10x1,2,7x3,27x3h,7x3,18h,3x1,4x11vd,12hv,2x1,19x25,2h,15x3h,7x3,18h,3x1,4x11hd,12hd,21x1,2h,15x3h,7x3,18h,10x1,17x25h,2x1,2h,15x3h,7x3,18h,10x1,2,7x3,9x3h,18h,1,2h,15x3h,7x3,18h,10x1,2,7x3,9x3h,18h,1,2h,15x3h,7x3,18h,10x1,2,7x3,9x3h,18h,1,2h,15x3h,7x3,15h,10x25h,2,7x3,9x3h,18h,1,2h,15x3h,26x3,9x3h,18h,1,2h,15x3h,26x3,9x3h,18h,1,2h,15x3h,26x3,9x3h,18h,1,2h,15x3h,26x3,9x3h,18h,1,2h,15x3h,26x3,9x3h,18h,1,2h,15x3h,26x3,9x3h,18h,1,2h,15x3h,26x3,9x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,48x3h,15,25,2x1,2x25,2h,46x3h,18h,12h,2x11vd,12hv,1,2h,46x3h,18,11h,2x13,11hv,1,2h,46x3h,18h,12,2x11hd,12hd,1,2h,46x3h,15h,5x25h,2h,1603x3h"
+						},
+						"tile-width": 96,
+						"tile-height": 96,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 7488,
+						"height": 4992,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "DialogueSpawner",
 					"properties": {
 						"initially-visible": false,
@@ -18,7 +73,7 @@
 					"uid": 16,
 					"instanceVariables": {
 						"TextToPrint": "Salut!;Tu aimes les films de gladiateurs?;Comment ça \"Vous êtes chelou monsieur\"??;._.",
-						"SpeechBubbleAtLeft": true,
+						"SpeechBubbleAtLeft": false,
 						"currentDialogueIndex": 0,
 						"IsDisplaying": false,
 						"Etape": 0
@@ -29,8 +84,8 @@
 						}
 					},
 					"world": {
-						"x": 927,
-						"y": 611,
+						"x": 1413,
+						"y": 1221,
 						"width": 256.3709515056448,
 						"height": 150.37095150564483,
 						"originX": 0.5,
@@ -68,8 +123,8 @@
 						}
 					},
 					"world": {
-						"x": 204,
-						"y": 677,
+						"x": 4393,
+						"y": 3452,
 						"width": 256.3709515056448,
 						"height": 150.37095150564483,
 						"originX": 0.5,
@@ -119,8 +174,8 @@
 						}
 					},
 					"world": {
-						"x": 312,
-						"y": 636,
+						"x": 1728,
+						"y": 1152,
 						"width": 64,
 						"height": 80,
 						"originX": 0.5,
@@ -157,10 +212,10 @@
 						}
 					},
 					"world": {
-						"x": 600,
-						"y": 594,
-						"width": 256,
-						"height": 341,
+						"x": 1728,
+						"y": 1056,
+						"width": 288,
+						"height": 384.00000000000006,
 						"originX": 0.5,
 						"originY": 0.8797653958944281,
 						"color": [
@@ -186,8 +241,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 425,
-						"y": 598,
+						"x": 1728,
+						"y": 1152,
 						"width": 96,
 						"height": 96,
 						"originX": 0.5,
@@ -215,8 +270,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 925,
-						"y": 637,
+						"x": 1411,
+						"y": 1247,
 						"width": 67,
 						"height": 82,
 						"originX": 0.5,
@@ -244,12 +299,80 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 212,
-						"y": 672,
-						"width": 89.72736483370053,
+						"x": 4401,
+						"y": 3447,
+						"width": -89.727365,
 						"height": 89.72736483370053,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DialogueSpawner",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 21,
+					"instanceVariables": {
+						"TextToPrint": "Whoa!;Il y a un zombie de l'autre côté de l'île... Dingue!;Comment c'est possible?",
+						"SpeechBubbleAtLeft": true,
+						"currentDialogueIndex": 0,
+						"IsDisplaying": false,
+						"Etape": 0
+					},
+					"behaviors": {
+						"Timer": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1975,
+						"y": 1443,
+						"width": 256.3709515056448,
+						"height": 150.37095150564483,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 22,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1973,
+						"y": 1469,
+						"width": -67,
+						"height": 82,
+						"originX": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -276,7 +399,7 @@
 				0.023529411764705882,
 				1
 			],
-			"isTransparent": false,
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -326,7 +449,7 @@
 	"effectTypes": [],
 	"width": 2560,
 	"height": 1440,
-	"unboundedScrolling": false,
+	"unboundedScrolling": true,
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
