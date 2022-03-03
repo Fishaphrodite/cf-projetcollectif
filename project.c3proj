@@ -55,6 +55,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r285.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
@@ -111,7 +119,8 @@
 			"Sprite",
 			"Sprite2",
 			"Tilemap",
-			"tileAnimMer"
+			"tileAnimMer",
+			"Keyboard"
 		],
 		"subfolders": [
 			{
@@ -137,16 +146,7 @@
 		]
 	},
 	"autosaveData": null,
-	"containers": [
-		{
-			"members": [
-				"9patch",
-				"DialogueSpawner",
-				"Text"
-			],
-			"selectMode": "normal"
-		}
-	],
+	"containers": [],
 	"families": {
 		"items": [
 			"zorder"
@@ -156,7 +156,8 @@
 	"layouts": {
 		"items": [
 			"Squale-Village",
-			"Fish-Village-test"
+			"Fish-Village-test",
+			"Hub-test"
 		],
 		"subfolders": []
 	},

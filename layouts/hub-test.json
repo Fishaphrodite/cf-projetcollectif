@@ -1,5 +1,5 @@
 {
-	"name": "Fish-Village-test",
+	"name": "Hub-test",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -20,7 +20,7 @@
 						"tile-y-drawing-offset": 0,
 						"drawing-mode": "top-to-right"
 					},
-					"uid": 20,
+					"uid": 25,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -36,7 +36,7 @@
 							"height": 52,
 							"max-width": 78,
 							"max-height": 53,
-							"data": "26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,7x3,5,10x7,2,7x3,27x3h,7x3,8,10x10,2,7x3,27x3h,7x3,8,10x10,2,7x3,27x3h,7x3,8,10x10,2,7x3,27x3h,7x3,8,10x10,2,7x3,27x3h,7x3,8,3x10,4x11vd,12hv,2x10,19x7,2h,15x3h,7x3,8,3x10,4x11hd,12hd,21x10,2h,15x3h,7x3,8,10x10,17x4,2x10,2h,15x3h,7x3,8,10x10,2,7x3,9x3h,8,10,2h,15x3h,7x3,8,10x10,2,7x3,9x3h,8,10,2h,15x3h,7x3,8,10x10,2,7x3,9x3h,8,10,2h,15x3h,7x3,11x6,2,7x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,48x3h,5,7,2x10,2x7,2h,43x3h,3x3,8,12h,2x11vd,12hv,1,2h,43x3h,3x3,8,11h,2x13,11hv,1,2h,43x3h,3x3,8,12,2x11hd,12hd,1,2h,46x3h,6,5x4,2h,97x3h,3,1505x3h"
+							"data": "26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,7x3,5,10x7,2,7x3,27x3h,7x3,8,10x10,2,7x3,27x3h,7x3,8,10x10,2,21x3,13x3h,7x3,8,10x10,2,21x3,13x3h,7x3,8,10x10,2,21x3,13x3h,7x3,8,3x10,4x11vd,12hv,2x10,2,21x3,13x3h,7x3,8,3x10,4x11hd,12hd,2x10,2,21x3,13x3h,7x3,8,10x10,2,21x3,13x3h,7x3,8,10x10,2,21x3,13x3h,7x3,8,10x10,2,21x3,13x3h,7x3,8,10x10,2,21x3,13x3h,7x3,11x6,2,21x3,13x3h,40x3,13x3h,40x3,13x3h,40x3,13x3h,40x3,13x3h,40x3,13x3h,40x3,13x3h,40x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,1497x3h"
 						},
 						"tile-width": 96,
 						"tile-height": 96,
@@ -62,82 +62,6 @@
 					}
 				},
 				{
-					"type": "DialogueSpawner",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 16,
-					"instanceVariables": {
-						"TextToPrint": "Salut!;Tu aimes les films de gladiateurs?;Comment ça \"Vous êtes chelou monsieur\"??;._.",
-						"SpeechBubbleAtLeft": false,
-						"currentDialogueIndex": 0,
-						"IsDisplaying": false
-					},
-					"behaviors": {
-						"Timer": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": 1413,
-						"y": 1221,
-						"width": 256.3709515056448,
-						"height": 150.37095150564483,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "DialogueSpawner",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 17,
-					"instanceVariables": {
-						"TextToPrint": "AGGROU!!!; Je suis très méchant;J'vais te faire bôboooo!",
-						"SpeechBubbleAtLeft": false,
-						"currentDialogueIndex": 0,
-						"IsDisplaying": false
-					},
-					"behaviors": {
-						"Timer": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": 4393,
-						"y": 3452,
-						"width": 256.3709515056448,
-						"height": 150.37095150564483,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "player",
 					"properties": {
 						"initially-visible": false,
@@ -146,7 +70,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 9,
+					"uid": 28,
 					"instanceVariables": {
 						"Ypos": 0
 					},
@@ -197,7 +121,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 12,
+					"uid": 29,
 					"instanceVariables": {
 						"Ypos": 0
 					},
@@ -235,12 +159,12 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 13,
+					"uid": 30,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1733,
-						"y": 1278,
+						"x": 1728,
+						"y": 1152,
 						"width": 96,
 						"height": 96,
 						"originX": 0.5,
@@ -256,131 +180,6 @@
 					}
 				},
 				{
-					"type": "Sprite",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 14,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1411,
-						"y": 1247,
-						"width": 67,
-						"height": 82,
-						"originX": 0.5,
-						"originY": 1,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Sprite2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 15,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 4401,
-						"y": 3447,
-						"width": -89.727365,
-						"height": 89.72736483370053,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "DialogueSpawner",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 21,
-					"instanceVariables": {
-						"TextToPrint": "Whoa!;Il y a un zombie de l'autre côté de l'île... Dingue!;Comment c'est possible?",
-						"SpeechBubbleAtLeft": true,
-						"currentDialogueIndex": 0,
-						"IsDisplaying": false
-					},
-					"behaviors": {
-						"Timer": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": 1975,
-						"y": 1443,
-						"width": 256.3709515056448,
-						"height": 150.37095150564483,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Sprite",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 22,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1973,
-						"y": 1469,
-						"width": -67,
-						"height": 82,
-						"originX": 0.5,
-						"originY": 1,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Teleporter",
 					"properties": {
 						"initially-visible": false,
@@ -389,11 +188,11 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 23,
+					"uid": 35,
 					"instanceVariables": {
-						"TextToPrint": "Aller au hub de test!",
+						"TextToPrint": "Retourner au village de Fish (Maison)!",
 						"IsDisplaying": false,
-						"LayoutName": "Hub-test",
+						"LayoutName": "Fish-Village-Test",
 						"Reference": 0
 					},
 					"behaviors": {
@@ -403,7 +202,7 @@
 					},
 					"world": {
 						"x": 1729,
-						"y": 1072,
+						"y": 1569,
 						"width": 256.3709515056448,
 						"height": 150.37095150564483,
 						"originX": 0.5,
@@ -427,11 +226,11 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 31,
+					"uid": 26,
 					"instanceVariables": {
-						"TextToPrint": "Aller au hub de test!",
+						"TextToPrint": "Retourner au village de Fish (Zombie)!",
 						"IsDisplaying": false,
-						"LayoutName": "Hub-test",
+						"LayoutName": "Fish-Village-Test",
 						"Reference": 1
 					},
 					"behaviors": {
@@ -440,8 +239,8 @@
 						}
 					},
 					"world": {
-						"x": 4389,
-						"y": 3284,
+						"x": 1501,
+						"y": 1290,
 						"width": 256.3709515056448,
 						"height": 150.37095150564483,
 						"originX": 0.5,
@@ -465,11 +264,11 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 32,
+					"uid": 27,
 					"instanceVariables": {
-						"TextToPrint": "Aller au hub de test!",
+						"TextToPrint": "Retourner au village de Fish(Mid point)!",
 						"IsDisplaying": false,
-						"LayoutName": "Hub-test",
+						"LayoutName": "Fish-Village-Test",
 						"Reference": 2
 					},
 					"behaviors": {
@@ -478,8 +277,8 @@
 						}
 					},
 					"world": {
-						"x": 1777,
-						"y": 3397,
+						"x": 1931,
+						"y": 1276,
 						"width": 256.3709515056448,
 						"height": 150.37095150564483,
 						"originX": 0.5,
@@ -495,7 +294,7 @@
 					}
 				}
 			],
-			"sid": 539664465301877,
+			"sid": 267650061696826,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -528,7 +327,7 @@
 			"overriden": 1,
 			"subLayers": [],
 			"instances": [],
-			"sid": 847318543446593,
+			"sid": 174845483543450,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -557,7 +356,7 @@
 			"global": false
 		}
 	],
-	"sid": 259193092376342,
+	"sid": 844676106507925,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 7488,

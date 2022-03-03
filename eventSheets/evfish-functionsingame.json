@@ -22,6 +22,16 @@
 			"sid": 570198962942348
 		},
 		{
+			"eventType": "variable",
+			"name": "TeleporterReference",
+			"type": "number",
+			"initialValue": "-1",
+			"comment": "When applicable, will teleport to the teleporter with the same reference as this variable on start of layout",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 482152204097463
+		},
+		{
 			"functionName": "RefreshHealthBar",
 			"functionDescription": "Will take two numbers (CurrentQuarter and MaxQuarter) and generate a string composed of the numbers 0 1 2 3 4 to represent a health bar in a spritefont",
 			"functionCategory": "",
@@ -230,6 +240,24 @@
 					"parameters": {
 						"unique-id": "UIDSpawner"
 					}
+				},
+				{
+					"id": "pick-children",
+					"objectClass": "DialogueSpawner",
+					"sid": 469675971811221,
+					"parameters": {
+						"child": "Text",
+						"which": "own"
+					}
+				},
+				{
+					"id": "pick-children",
+					"objectClass": "DialogueSpawner",
+					"sid": 522757130003473,
+					"parameters": {
+						"child": "9patch",
+						"which": "own"
+					}
 				}
 			],
 			"actions": [
@@ -361,6 +389,61 @@
 						}
 					],
 					"sid": 337035446218415
+				}
+			]
+		},
+		{
+			"functionName": "TeleportFunction",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "UIDTeleporter",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 419339509061731
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "Teleporter",
+					"sid": 133058640038622,
+					"parameters": {
+						"unique-id": "UIDTeleporter"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 434691308078029,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 461188940625613,
+							"parameters": {
+								"variable": "TeleporterReference",
+								"value": "Teleporter.Reference"
+							}
+						},
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 715192404729897,
+							"parameters": {
+								"layout": "Teleporter.LayoutName"
+							}
+						}
+					],
+					"sid": 741921013919067
 				}
 			]
 		}

@@ -9,40 +9,20 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 275005525090104
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "9patch",
-					"sid": 911924796214412,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Text",
-					"sid": 568175985489954,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				}
-			],
-			"sid": 982563627572602
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "DialogueSpawner",
 					"sid": 967224042457084,
 					"parameters": {
 						"object": "player"
+					}
+				},
+				{
+					"id": "pick-children",
+					"objectClass": "DialogueSpawner",
+					"sid": 686931959001768,
+					"parameters": {
+						"child": "9patch",
+						"which": "own"
 					}
 				},
 				{
@@ -118,6 +98,15 @@
 					"parameters": {
 						"tags": "\"Height+\""
 					}
+				},
+				{
+					"id": "pick-parent",
+					"objectClass": "9patch",
+					"sid": 104464295902128,
+					"parameters": {
+						"parent": "DialogueSpawner",
+						"which": "own"
+					}
 				}
 			],
 			"actions": [
@@ -145,6 +134,15 @@
 					"behaviorType": "Timer",
 					"parameters": {
 						"tag": "\"TextShown\""
+					}
+				},
+				{
+					"id": "pick-children",
+					"objectClass": "DialogueSpawner",
+					"sid": 713244189612505,
+					"parameters": {
+						"child": "9patch",
+						"which": "own"
 					}
 				},
 				{
@@ -219,6 +217,24 @@
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"Width-\""
+					}
+				},
+				{
+					"id": "pick-parent",
+					"objectClass": "9patch",
+					"sid": 779908717727217,
+					"parameters": {
+						"parent": "DialogueSpawner",
+						"which": "own"
+					}
+				},
+				{
+					"id": "pick-children",
+					"objectClass": "DialogueSpawner",
+					"sid": 938525512706595,
+					"parameters": {
+						"child": "Text",
+						"which": "own"
 					}
 				}
 			],
@@ -323,6 +339,24 @@
 					"objectClass": "9patch",
 					"sid": 444638485006416,
 					"behaviorType": "Tween"
+				},
+				{
+					"id": "pick-parent",
+					"objectClass": "9patch",
+					"sid": 275979267559658,
+					"parameters": {
+						"parent": "DialogueSpawner",
+						"which": "own"
+					}
+				},
+				{
+					"id": "pick-children",
+					"objectClass": "DialogueSpawner",
+					"sid": 775853330166038,
+					"parameters": {
+						"child": "Text",
+						"which": "own"
+					}
 				}
 			],
 			"actions": [
@@ -337,6 +371,484 @@
 				}
 			],
 			"sid": 160427926559653
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "DialogueSpawner",
+					"sid": 549266469701783
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "DialogueSpawner",
+					"sid": 898467373887828,
+					"parameters": {
+						"object": "9patch",
+						"layer": "Self.LayerName",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "DialogueSpawner",
+					"sid": 832163641434999,
+					"parameters": {
+						"object": "Text",
+						"layer": "Self.LayerName",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "add-child",
+					"objectClass": "DialogueSpawner",
+					"sid": 638200211823340,
+					"parameters": {
+						"child": "9patch",
+						"transform-x": false,
+						"transform-y": false,
+						"transform-w": false,
+						"transform-h": false,
+						"transform-a": false,
+						"transform-z-elevation": false,
+						"destroy-with-parent": true
+					}
+				},
+				{
+					"id": "add-child",
+					"objectClass": "DialogueSpawner",
+					"sid": 939302822331357,
+					"parameters": {
+						"child": "Text",
+						"transform-x": false,
+						"transform-y": false,
+						"transform-w": false,
+						"transform-h": false,
+						"transform-a": false,
+						"transform-z-elevation": false,
+						"destroy-with-parent": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "9patch",
+					"sid": 504498200053059,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Text",
+					"sid": 391666395463650,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Text",
+					"sid": 845700558446020,
+					"parameters": {
+						"text": "\"\""
+					}
+				}
+			],
+			"sid": 429383992051000
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Teleporter",
+					"sid": 776192203883033
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Teleporter",
+					"sid": 607406277053697,
+					"parameters": {
+						"object": "9patch",
+						"layer": "Self.LayerName",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Teleporter",
+					"sid": 503737747082875,
+					"parameters": {
+						"object": "Text",
+						"layer": "Self.LayerName",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "add-child",
+					"objectClass": "Teleporter",
+					"sid": 437720765309224,
+					"parameters": {
+						"child": "9patch",
+						"transform-x": false,
+						"transform-y": false,
+						"transform-w": false,
+						"transform-h": false,
+						"transform-a": false,
+						"transform-z-elevation": false,
+						"destroy-with-parent": true
+					}
+				},
+				{
+					"id": "add-child",
+					"objectClass": "Teleporter",
+					"sid": 785829221255107,
+					"parameters": {
+						"child": "Text",
+						"transform-x": false,
+						"transform-y": false,
+						"transform-w": false,
+						"transform-h": false,
+						"transform-a": false,
+						"transform-z-elevation": false,
+						"destroy-with-parent": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "9patch",
+					"sid": 286181450850715,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Text",
+					"sid": 158909273687087,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Text",
+					"sid": 789115801733934,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Text",
+					"sid": 787940301378506,
+					"parameters": {
+						"width": "9patch.Width-32",
+						"height": "9patch.Height"
+					}
+				}
+			],
+			"sid": 681743164017085
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 695888747717893,
+					"parameters": {
+						"object": "Teleporter"
+					}
+				},
+				{
+					"id": "pick-children",
+					"objectClass": "Teleporter",
+					"sid": 207627555130388,
+					"parameters": {
+						"child": "9patch",
+						"which": "own"
+					}
+				},
+				{
+					"id": "is-any-playing",
+					"objectClass": "9patch",
+					"sid": 377394894929063,
+					"behaviorType": "Tween",
+					"isInverted": true
+				},
+				{
+					"id": "pick-children",
+					"objectClass": "Teleporter",
+					"sid": 192617128623401,
+					"parameters": {
+						"child": "Text",
+						"which": "own"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "9patch",
+					"sid": 407961751970871,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"Visible\"",
+						"property": "offsetOpacity",
+						"end-value": "100",
+						"time": "0.25",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "9patch",
+					"sid": 635322616858872,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Text",
+					"sid": 874952375245327,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-vertical-alignment",
+					"objectClass": "Text",
+					"sid": 760398434793357,
+					"parameters": {
+						"vertical-alignment": "center"
+					}
+				}
+			],
+			"sid": 943275442428294
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "9patch",
+					"sid": 539233112979901,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"Visible\""
+					}
+				},
+				{
+					"id": "pick-parent",
+					"objectClass": "9patch",
+					"sid": 133610679191280,
+					"parameters": {
+						"parent": "Teleporter",
+						"which": "own"
+					}
+				},
+				{
+					"id": "pick-children",
+					"objectClass": "Teleporter",
+					"sid": 136007052954310,
+					"parameters": {
+						"child": "Text",
+						"which": "own"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "Text",
+					"sid": 716933175573501,
+					"parameters": {
+						"text": "Teleporter.TextToPrint",
+						"duration": "2"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Teleporter",
+					"sid": 331471998330074,
+					"parameters": {
+						"instance-variable": "IsDisplaying",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 121712935492816
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Teleporter",
+					"sid": 743701909416939,
+					"parameters": {
+						"instance-variable": "IsDisplaying"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 668018791403824,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "player",
+							"sid": 755878215792894,
+							"parameters": {
+								"object": "Teleporter"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "pick-children",
+							"objectClass": "Teleporter",
+							"sid": 980360373861565,
+							"parameters": {
+								"child": "9patch",
+								"which": "own"
+							}
+						},
+						{
+							"id": "pick-children",
+							"objectClass": "Teleporter",
+							"sid": 795367877068592,
+							"parameters": {
+								"child": "Text",
+								"which": "own"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Text",
+							"sid": 324986451110447,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "9patch",
+							"sid": 188537284943616,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "9patch",
+							"sid": 285455474948262,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Text",
+							"sid": 636129325891641,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Teleporter",
+							"sid": 914224283152338,
+							"parameters": {
+								"instance-variable": "IsDisplaying",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 679796269695264
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 517077589577736,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "TeleportFunction",
+							"sid": 477923626109878,
+							"parameters": [
+								"Teleporter.UID"
+							]
+						}
+					],
+					"sid": 716786849618165
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 414736784440181
+				}
+			],
+			"actions": [],
+			"sid": 827318824352190,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Teleporter",
+							"sid": 112353633194437,
+							"parameters": {
+								"instance-variable": "Reference",
+								"comparison": 0,
+								"value": "TeleporterReference"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "player",
+							"sid": 594217508180086,
+							"parameters": {
+								"x": "Teleporter.X",
+								"y": "Teleporter.Y"
+							}
+						}
+					],
+					"sid": 254948317309730
+				}
+			]
 		}
 	],
 	"sid": 448853589362883
