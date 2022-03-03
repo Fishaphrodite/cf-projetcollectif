@@ -1,39 +1,27 @@
 {
-	"name": "DialogueSpawner",
+	"name": "Teleporter",
 	"plugin-id": "Sprite",
-	"sid": 155491780733168,
+	"sid": 531908311258756,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
 			"name": "TextToPrint",
 			"type": "string",
 			"desc": "; separated list of dialogue to show when the player is close",
-			"sid": 388808572283804
-		},
-		{
-			"name": "SpeechBubbleAtLeft",
-			"type": "boolean",
-			"desc": "True if the speech bubble needs to be on the left-side, false if it needs to be on the right",
-			"sid": 355700075991367
-		},
-		{
-			"name": "currentDialogueIndex",
-			"type": "number",
-			"desc": "0 : is showing the first sentence, 1 : is showing the second, etc.",
-			"sid": 519647133659870
+			"sid": 410208026117534
 		},
 		{
 			"name": "IsDisplaying",
 			"type": "boolean",
 			"desc": "True when it tries to display the text, false otherwise",
-			"sid": 795834783835865
+			"sid": 882514348024920
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Timer",
 			"name": "Timer",
-			"sid": 915971619058695
+			"sid": 243059347664339
 		}
 	],
 	"effectTypes": [],
@@ -49,7 +37,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7728547,
+						"imageSpriteId": 6336584,
 						"collisionPoly": {
 							"points": [
 								0.175,
@@ -74,7 +62,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 791627939877425,
+				"sid": 938679609864887,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

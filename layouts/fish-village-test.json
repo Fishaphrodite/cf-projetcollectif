@@ -75,8 +75,7 @@
 						"TextToPrint": "Salut!;Tu aimes les films de gladiateurs?;Comment ça \"Vous êtes chelou monsieur\"??;._.",
 						"SpeechBubbleAtLeft": false,
 						"currentDialogueIndex": 0,
-						"IsDisplaying": false,
-						"Etape": 0
+						"IsDisplaying": false
 					},
 					"behaviors": {
 						"Timer": {
@@ -114,8 +113,7 @@
 						"TextToPrint": "AGGROU!!!; Je suis très méchant;J'vais te faire bôboooo!",
 						"SpeechBubbleAtLeft": false,
 						"currentDialogueIndex": 0,
-						"IsDisplaying": false,
-						"Etape": 0
+						"IsDisplaying": false
 					},
 					"behaviors": {
 						"Timer": {
@@ -329,8 +327,7 @@
 						"TextToPrint": "Whoa!;Il y a un zombie de l'autre côté de l'île... Dingue!;Comment c'est possible?",
 						"SpeechBubbleAtLeft": true,
 						"currentDialogueIndex": 0,
-						"IsDisplaying": false,
-						"Etape": 0
+						"IsDisplaying": false
 					},
 					"behaviors": {
 						"Timer": {
@@ -373,6 +370,42 @@
 						"height": 82,
 						"originX": 0.5,
 						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Teleporter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 23,
+					"instanceVariables": {
+						"TextToPrint": "Aller au village de Squale!",
+						"IsDisplaying": false
+					},
+					"behaviors": {
+						"Timer": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1729,
+						"y": 1072,
+						"width": 256.3709515056448,
+						"height": 150.37095150564483,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
