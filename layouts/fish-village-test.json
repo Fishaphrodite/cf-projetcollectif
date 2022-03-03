@@ -36,7 +36,7 @@
 							"height": 52,
 							"max-width": 78,
 							"max-height": 53,
-							"data": "26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,7x3,15,10x25,2,7x3,27x3h,7x3,18h,10x1,2,7x3,27x3h,7x3,18h,10x1,2,7x3,27x3h,7x3,18h,10x1,2,7x3,27x3h,7x3,18h,10x1,2,7x3,27x3h,7x3,18h,3x1,4x11vd,12hv,2x1,19x25,2h,15x3h,7x3,18h,3x1,4x11hd,12hd,21x1,2h,15x3h,7x3,18h,10x1,17x25h,2x1,2h,15x3h,7x3,18h,10x1,2,7x3,9x3h,18h,1,2h,15x3h,7x3,18h,10x1,2,7x3,9x3h,18h,1,2h,15x3h,7x3,18h,10x1,2,7x3,9x3h,18h,1,2h,15x3h,7x3,15h,10x25h,2,7x3,9x3h,18h,1,2h,15x3h,26x3,9x3h,18h,1,2h,15x3h,26x3,9x3h,18h,1,2h,15x3h,26x3,9x3h,18h,1,2h,15x3h,26x3,9x3h,18h,1,2h,15x3h,26x3,9x3h,18h,1,2h,15x3h,26x3,9x3h,18h,1,2h,15x3h,26x3,9x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,50x3h,18h,1,2h,48x3h,15,25,2x1,2x25,2h,46x3h,18h,12h,2x11vd,12hv,1,2h,46x3h,18,11h,2x13,11hv,1,2h,46x3h,18h,12,2x11hd,12hd,1,2h,46x3h,15h,5x25h,2h,1603x3h"
+							"data": "26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,7x3,5,10x7,2,7x3,27x3h,7x3,8,10x10,2,7x3,27x3h,7x3,8,10x10,2,7x3,27x3h,7x3,8,10x10,2,7x3,27x3h,7x3,8,10x10,2,7x3,27x3h,7x3,8,3x10,4x11vd,12hv,2x10,19x7,2h,15x3h,7x3,8,3x10,4x11hd,12hd,21x10,2h,15x3h,7x3,8,10x10,17x4,2x10,2h,15x3h,7x3,8,10x10,2,7x3,9x3h,8,10,2h,15x3h,7x3,8,10x10,2,7x3,9x3h,8,10,2h,15x3h,7x3,8,10x10,2,7x3,9x3h,8,10,2h,15x3h,7x3,11x6,2,7x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,48x3h,5,7,2x10,2x7,2h,43x3h,3x3,8,12h,2x11vd,12hv,1,2h,43x3h,3x3,8,11h,2x13,11hv,1,2h,43x3h,3x3,8,12,2x11hd,12hd,1,2h,46x3h,6,5x4,2h,97x3h,3,1505x3h"
 						},
 						"tile-width": 96,
 						"tile-height": 96,
@@ -387,6 +387,7 @@
 			"sid": 539664465301877,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
 			"color": [
 				1,
 				1,
@@ -419,6 +420,7 @@
 			"sid": 847318543446593,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
 			"color": [
 				1,
 				1,
@@ -447,8 +449,8 @@
 	"sid": 259193092376342,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 2560,
-	"height": 1440,
+	"width": 7488,
+	"height": 4992,
 	"unboundedScrolling": true,
 	"vpX": 0.5,
 	"vpY": 0.5,
