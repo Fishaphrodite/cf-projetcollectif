@@ -20,11 +20,26 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 6762283,
+		"imageSpriteId": 7227459,
 		"useCollisionPoly": true
 	},
 	"tile-collision-polys": {
 		"0": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0,
+					1,
+					0,
+					1,
+					1,
+					0,
+					1
+				]
+			},
+			"useCollisionPoly": false
+		},
+		"2": {
 			"collisionPoly": {
 				"points": [
 					0,
