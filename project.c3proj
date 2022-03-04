@@ -32,6 +32,14 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"version": "r285.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "NinePatch",
 			"name": "9-patch",
 			"author": "Scirra",
@@ -42,14 +50,6 @@
 			"type": "plugin",
 			"id": "Mouse",
 			"name": "Mouse",
-			"author": "Scirra",
-			"version": "r285.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Tilemap",
-			"name": "Tilemap",
 			"author": "Scirra",
 			"version": "r285.2",
 			"bundled": false
@@ -138,7 +138,8 @@
 					"Fish_Heart",
 					"En_RollingBlade",
 					"DialogueSpawner",
-					"Teleporter"
+					"Teleporter",
+					"Tilemap_BarInside"
 				],
 				"subfolders": [],
 				"name": "fish"
@@ -165,7 +166,8 @@
 		"items": [
 			"evSquale-Village",
 			"evFish-FunctionsInGame",
-			"evFish-Dialogue"
+			"evFish-Dialogue",
+			"evFish-Main"
 		],
 		"subfolders": []
 	},

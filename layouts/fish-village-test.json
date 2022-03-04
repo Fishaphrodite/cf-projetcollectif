@@ -36,7 +36,7 @@
 							"height": 52,
 							"max-width": 78,
 							"max-height": 53,
-							"data": "26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,7x3,5,10x7,2,7x3,27x3h,7x3,8,10x10,2,7x3,27x3h,7x3,8,10x10,2,7x3,27x3h,7x3,8,10x10,2,7x3,27x3h,7x3,8,10x10,2,7x3,27x3h,7x3,8,3x10,4x11vd,12hv,2x10,19x7,2h,15x3h,7x3,8,3x10,4x11hd,12hd,21x10,2h,15x3h,7x3,8,10x10,17x4,2x10,2h,15x3h,7x3,8,10x10,2,7x3,9x3h,8,10,2h,15x3h,7x3,8,10x10,2,7x3,9x3h,8,10,2h,15x3h,7x3,8,10x10,2,7x3,9x3h,8,10,2h,15x3h,7x3,11x6,2,7x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,15x3h,26x3,9x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,50x3h,8,10,2h,48x3h,5,7,2x10,2x7,2h,43x3h,3x3,8,12h,2x11vd,12hv,1,2h,43x3h,3x3,8,11h,2x13,11hv,1,2h,43x3h,3x3,8,12,2x11hd,12hd,1,2h,46x3h,6,5x4,2h,97x3h,3,1505x3h"
+							"data": "26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,7x3,5,10x7,2,7x3,27x3h,7x3,8,10x1,2,7x3,27x3h,7x3,8,10x1,2,7x3,27x3h,7x3,8,10x1,2,7x3,27x3h,7x3,8,10x1,2,7x3,27x3h,7x3,8,3x1,4x11vd,12hv,2x1,19x7,2h,15x3h,7x3,8,3x1,4x11hd,12hd,21x1,2h,15x3h,7x3,8,10x1,17x4,2x1,2h,15x3h,7x3,8,10x1,2,7x3,9x3h,8,1,2h,15x3h,7x3,8,10x1,2,7x3,9x3h,8,1,2h,15x3h,7x3,8,10x1,2,7x3,9x3h,8,1,2h,15x3h,7x3,6,10x4,2,7x3,9x3h,8,1,2h,15x3h,26x3,9x3h,8,1,2h,15x3h,26x3,9x3h,8,1,2h,15x3h,26x3,9x3h,8,1,2h,15x3h,26x3,9x3h,8,1,2h,15x3h,26x3,9x3h,8,1,2h,15x3h,26x3,9x3h,8,1,2h,15x3h,26x3,9x3h,8,1,2h,20x3h,8x3,22x3h,8,1,2h,21x3h,6x3,23x3h,8,1,2h,50x3h,8,1,2h,50x3h,8,1,2h,50x3h,8,1,2h,50x3h,8,1,2h,50x3h,8,1,2h,50x3h,8,1,2h,50x3h,8,1,2h,50x3h,8,1,2h,50x3h,8,1,2h,50x3h,8,1,2h,48x3h,5,7,2x1,2x7,2h,43x3h,3x3,8,12h,2x11vd,12hv,1,2h,43x3h,3x3,8,11h,2x13,11hv,1,2h,43x3h,3x3,8,12,2x11hd,12hd,1,2h,46x3h,6,5x4,2h,97x3h,3,1505x3h"
 						},
 						"tile-width": 96,
 						"tile-height": 96,
@@ -74,8 +74,7 @@
 					"instanceVariables": {
 						"TextToPrint": "Salut!;Tu aimes les films de gladiateurs?;Comment ça \"Vous êtes chelou monsieur\"??;._.",
 						"SpeechBubbleAtLeft": false,
-						"currentDialogueIndex": 0,
-						"IsDisplaying": false
+						"currentDialogueIndex": 0
 					},
 					"behaviors": {
 						"Timer": {
@@ -112,8 +111,7 @@
 					"instanceVariables": {
 						"TextToPrint": "AGGROU!!!; Je suis très méchant;J'vais te faire bôboooo!",
 						"SpeechBubbleAtLeft": false,
-						"currentDialogueIndex": 0,
-						"IsDisplaying": false
+						"currentDialogueIndex": 0
 					},
 					"behaviors": {
 						"Timer": {
@@ -326,8 +324,7 @@
 					"instanceVariables": {
 						"TextToPrint": "Whoa!;Il y a un zombie de l'autre côté de l'île... Dingue!;Comment c'est possible?",
 						"SpeechBubbleAtLeft": true,
-						"currentDialogueIndex": 0,
-						"IsDisplaying": false
+						"currentDialogueIndex": 0
 					},
 					"behaviors": {
 						"Timer": {
@@ -566,5 +563,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "evFish-Dialogue"
+	"eventSheet": "evFish-Main"
 }

@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Tilemap",
+					"type": "Tilemap_BarInside",
 					"properties": {
 						"initially-visible": true,
 						"tile-width": 96,
@@ -20,7 +20,7 @@
 						"tile-y-drawing-offset": 0,
 						"drawing-mode": "top-to-right"
 					},
-					"uid": 25,
+					"uid": 33,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -32,11 +32,11 @@
 					},
 					"ownData": {
 						"tilemapData": {
-							"width": 78,
-							"height": 52,
-							"max-width": 78,
-							"max-height": 53,
-							"data": "26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,26x3,27x3h,7x3,5,10x7,2,7x3,27x3h,7x3,8,10x10,2,7x3,27x3h,7x3,8,10x10,2,21x3,13x3h,7x3,8,10x10,2,21x3,13x3h,7x3,8,10x10,2,21x3,13x3h,7x3,8,3x10,4x11vd,12hv,2x10,2,21x3,13x3h,7x3,8,3x10,4x11hd,12hd,2x10,2,21x3,13x3h,7x3,8,10x10,2,21x3,13x3h,7x3,8,10x10,2,21x3,13x3h,7x3,8,10x10,2,21x3,13x3h,7x3,8,10x10,2,21x3,13x3h,7x3,11x6,2,21x3,13x3h,40x3,13x3h,40x3,13x3h,40x3,13x3h,40x3,13x3h,40x3,13x3h,40x3,13x3h,40x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,36x3h,17x3,1497x3h"
+							"width": 39,
+							"height": 26,
+							"max-width": 98,
+							"max-height": 73,
+							"data": "62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,2x2,12x1,48x2,11x0,2x2,12x1,48x2,11x0,2x2,2x1,3x2,7x1,48x2,11x0,2x2,2x1,3x2,7x1,3,47x2,11x0,2x2,2x1,3x2,7x1,48x2,11x0,2x2,2x1,3x2,7x1,48x2,11x0,2x2,2x1,3x2,7x1,48x2,11x0,2x2,2x1,3x2,2x1,53x2,11x0,2x2,3x1,3,2,2x1,53x2,11x0,7x2,2x1,53x2,11x0,7x2,2x1,53x2,11x0,7x2,4x1,51x2,11x0,7x2,4x1,51x2,11x0,9x2,2x1,51x2,11x0,9x2,3x1,3,49x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,11x0,62x2,2639x0"
 						},
 						"tile-width": 96,
 						"tile-height": 96,
@@ -48,8 +48,8 @@
 					"world": {
 						"x": 0,
 						"y": 0,
-						"width": 7488,
-						"height": 4992,
+						"width": 3776,
+						"height": 2560,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -96,50 +96,12 @@
 						}
 					},
 					"world": {
-						"x": 1728,
-						"y": 1152,
+						"x": 1312,
+						"y": 1120,
 						"width": 64,
 						"height": 80,
 						"originX": 0.5,
 						"originY": 1,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "maison",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 29,
-					"instanceVariables": {
-						"Ypos": 0
-					},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1728,
-						"y": 1056,
-						"width": 288,
-						"height": 384.00000000000006,
-						"originX": 0.5,
-						"originY": 0.8797653958944281,
 						"color": [
 							1,
 							1,
@@ -163,8 +125,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1728,
-						"y": 1152,
+						"x": 1312,
+						"y": 1120,
 						"width": 96,
 						"height": 96,
 						"originX": 0.5,
@@ -201,8 +163,8 @@
 						}
 					},
 					"world": {
-						"x": 1729,
-						"y": 1569,
+						"x": 1216,
+						"y": 1440,
 						"width": 256.3709515056448,
 						"height": 150.37095150564483,
 						"originX": 0.5,
@@ -239,8 +201,8 @@
 						}
 					},
 					"world": {
-						"x": 1501,
-						"y": 1290,
+						"x": 1696,
+						"y": 544,
 						"width": 256.3709515056448,
 						"height": 150.37095150564483,
 						"originX": 0.5,
@@ -277,8 +239,8 @@
 						}
 					},
 					"world": {
-						"x": 1931,
-						"y": 1276,
+						"x": 2272,
+						"y": 1216,
 						"width": 256.3709515056448,
 						"height": 150.37095150564483,
 						"originX": 0.5,
@@ -365,5 +327,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "evFish-Dialogue"
+	"eventSheet": "evFish-Main"
 }

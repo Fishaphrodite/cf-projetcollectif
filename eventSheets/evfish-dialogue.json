@@ -2,8 +2,8 @@
 	"name": "evFish-Dialogue",
 	"events": [
 		{
-			"eventType": "include",
-			"includeSheet": "evSquale-Village"
+			"eventType": "comment",
+			"text": "Système de dialogue"
 		},
 		{
 			"eventType": "block",
@@ -435,31 +435,20 @@
 					}
 				},
 				{
-					"id": "set-visible",
-					"objectClass": "9patch",
-					"sid": 504498200053059,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
+					"id": "set-size",
 					"objectClass": "Text",
-					"sid": 391666395463650,
+					"sid": 686833278828716,
 					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "Text",
-					"sid": 845700558446020,
-					"parameters": {
-						"text": "\"\""
+						"width": "9patch.Width-32",
+						"height": "9patch.Height"
 					}
 				}
 			],
 			"sid": 429383992051000
+		},
+		{
+			"eventType": "comment",
+			"text": "Système de téléportation"
 		},
 		{
 			"eventType": "block",
@@ -524,30 +513,6 @@
 					}
 				},
 				{
-					"id": "set-visible",
-					"objectClass": "9patch",
-					"sid": 286181450850715,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "Text",
-					"sid": 158909273687087,
-					"parameters": {
-						"text": "\"\""
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Text",
-					"sid": 789115801733934,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
 					"id": "set-size",
 					"objectClass": "Text",
 					"sid": 787940301378506,
@@ -600,7 +565,7 @@
 				{
 					"id": "tween-one-property",
 					"objectClass": "9patch",
-					"sid": 407961751970871,
+					"sid": 101723234695629,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"Visible\"",
@@ -675,10 +640,10 @@
 				{
 					"id": "typewriter-text",
 					"objectClass": "Text",
-					"sid": 716933175573501,
+					"sid": 585984100018773,
 					"parameters": {
 						"text": "Teleporter.TextToPrint",
-						"duration": "2"
+						"duration": "1"
 					}
 				},
 				{
@@ -806,47 +771,6 @@
 						}
 					],
 					"sid": 716786849618165
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 414736784440181
-				}
-			],
-			"actions": [],
-			"sid": 827318824352190,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Teleporter",
-							"sid": 112353633194437,
-							"parameters": {
-								"instance-variable": "Reference",
-								"comparison": 0,
-								"value": "TeleporterReference"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-position",
-							"objectClass": "player",
-							"sid": 594217508180086,
-							"parameters": {
-								"x": "Teleporter.X",
-								"y": "Teleporter.Y"
-							}
-						}
-					],
-					"sid": 254948317309730
 				}
 			]
 		}

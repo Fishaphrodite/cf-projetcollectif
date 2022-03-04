@@ -21,12 +21,6 @@
 			"type": "number",
 			"desc": "0 : is showing the first sentence, 1 : is showing the second, etc.",
 			"sid": 519647133659870
-		},
-		{
-			"name": "IsDisplaying",
-			"type": "boolean",
-			"desc": "True when it tries to display the text, false otherwise",
-			"sid": 795834783835865
 		}
 	],
 	"behaviorTypes": [

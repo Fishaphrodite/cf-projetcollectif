@@ -1,0 +1,93 @@
+{
+	"name": "evFish-Main",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "evSquale-Village"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "evFish-Dialogue"
+		},
+		{
+			"eventType": "comment",
+			"text": "Teleportation initiale"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 377442202353345
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "9patch",
+					"sid": 271204216276823,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Text",
+					"sid": 684448097619362,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Text",
+					"sid": 720983216485148,
+					"parameters": {
+						"text": "\"\""
+					}
+				}
+			],
+			"sid": 678418248580964,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Teleporter",
+							"sid": 819965070827687,
+							"parameters": {
+								"instance-variable": "Reference",
+								"comparison": 0,
+								"value": "TeleporterReference"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "player",
+							"sid": 823545388407095,
+							"parameters": {
+								"x": "Teleporter.X",
+								"y": "Teleporter.Y"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 837153103790916,
+							"parameters": {
+								"variable": "TeleporterReference",
+								"value": "-1"
+							}
+						}
+					],
+					"sid": 724881503080395
+				}
+			]
+		}
+	],
+	"sid": 445114787318343
+}
